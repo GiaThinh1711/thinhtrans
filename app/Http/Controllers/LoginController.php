@@ -12,7 +12,7 @@ class LoginController extends Controller
             return view("auth.login");
         $credentials = $request->only(["email,password"]);
         if(Auth::guard("admin")->attempt($credentials)){
-            return redirect()->to("home");
+            return redirect()->to("admin");
         }
         return redirect()->back()->withInput();
     }

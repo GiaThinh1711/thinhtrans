@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        DB::table("admin")->insert([
-           "name"=>"ADMIN",
+        DB::table("users")->insert([
+           "name"=>"GiaThinh",
             "email"=>"admin@gmail.com",
             "password"=>bcrypt("12345678")
             //fff

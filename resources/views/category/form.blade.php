@@ -16,7 +16,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-12" style="text-align: center">
-                        <h1>Add Products</h1>
+                        <h1>Add Categories</h1>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -31,14 +31,14 @@
                         <!-- jquery validation -->
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Thêm mới sản phẩm</h3>
+                                <h3 class="card-title">Thêm mới danh mục</h3>
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
                             <form action="{{url("/categories/save")}}" method="post" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Product name</label>
+                                        <label for="exampleInputEmail1">Category name</label>
                                         <input type="text" name="name" class="form-control" placeholder="Name">
                                     </div>
                                 </div>

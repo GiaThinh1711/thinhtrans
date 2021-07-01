@@ -39,19 +39,21 @@ class ProductController extends Controller
         ]);
 
         //upload file
-            $imagew=null;
+        $image = null;
         if($request->has("image")){
             $file = $request->file("image");
+//            dd($file);
             //$fileName = $file -> getClientOriginalName(); //lay ten file
             $extName = $file->getClientOriginalExtension(); //lay duoi file
             $fileName = time().".".$extName;
             $fileSize = $file->getSize();
+
             $allow = ["png","jpeg","jpg","gif"]; //nhung file dc up len
             if(in_array($extName,$allow)){
                 if($fileSize < 100000000){
                     try{
                         $file->move("upload",$fileName);
-                        $imagew=$fileName;
+                        $image = $fileName;
                     }catch (\Exception $e){
 
                     }
@@ -62,7 +64,7 @@ class ProductController extends Controller
         try {
             Product::create([
                 "name"=>$request->get("name"),
-                "image"=>$request->get("image"),
+                "image"=>$image,
                 "des"=>$request->get("des"),
                 "price"=>$request->get("price"),
                 "qty"=>$request->get("qty"),

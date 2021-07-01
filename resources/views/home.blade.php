@@ -26,70 +26,6 @@
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-                <!-- Info boxes -->
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">CPU Traffic</span>
-                                <span class="info-box-number">
-                  10
-                  <small>%</small>
-                </span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="info-box mb-3">
-                            <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">Likes</span>
-                                <span class="info-box-number">41,410</span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-
-                    <!-- fix for small devices only -->
-                    <div class="clearfix hidden-md-up"></div>
-
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="info-box mb-3">
-                            <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">Sales</span>
-                                <span class="info-box-number">760</span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="info-box mb-3">
-                            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">New Members</span>
-                                <span class="info-box-number">2,000</span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
@@ -306,7 +242,7 @@
                                                     <span class="direct-chat-timestamp float-right">23 June 2:00 pm</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/gt1.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="{{asset("dist/img/gt1.jpg")}}" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                     Oh shit! I found that something special.
@@ -322,7 +258,7 @@
                                                     <span class="direct-chat-timestamp float-left">23 June 2:05 pm</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/gt2.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="{{asset("dist/img/gt2.jpg")}}" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                     What is this ?
@@ -338,7 +274,7 @@
                                                     <span class="direct-chat-timestamp float-right">23 June 5:37 pm</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/gt1.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="{{asset("dist/img/gt1.jpg")}}" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                    Name of the loser :))))
@@ -354,7 +290,7 @@
                                                     <span class="direct-chat-timestamp float-left">23 June 6:10 pm</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/gt2.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="{{asset("dist/img/gt2.jpg")}}" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                     Wtf are talking about ?
@@ -397,35 +333,35 @@
                                     <div class="card-body p-0">
                                         <ul class="users-list clearfix row">
                                             <li class="col-md-3">
-                                                <img src="dist/img/gt1.jpg" alt="User Image">
+                                                <img src="{{asset("dist/img/gt1.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/gt2.jpg" alt="User Image">
+                                                <img src="{{asset("dist/img/gt2.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/gt3.jpg" alt="User Image">
+                                                <img src="{{asset("dist/img/gt3.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/gt4.jpg" alt="User Image">
+                                                <img src="{{asset("dist/img/gt4.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/chó tùng.jpg" style="height: 81px;width: 81px" alt="User Image">
+                                                <img src="{{asset("dist/img/chó tùng.jpg")}}" style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Chó Tùng</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/chó tùng.jpg" style="height: 81px;width: 81px" alt="User Image">
+                                                <img src="{{asset("dist/img/chó tùng.jpg")}}" style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Chó Tùng</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/chó tùng.jpg" style="height: 81px;width: 81px" alt="User Image">
+                                                <img src="{{asset("dist/img/chó tùng.jpg")}}" style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Chó Tùng</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="dist/img/chó tùng.jpg" style="height: 81px;width: 81px" alt="User Image">
+                                                <img src="{{asset("dist/img/chó tùng.jpg")}}" style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Chó Tùng</a>
                                             </li>
                                         </ul>

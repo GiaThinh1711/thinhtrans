@@ -35,3 +35,10 @@ Route::get('/products/remove/{id}',[\App\Http\Controllers\ProductController::cla
 Route::get('/products/edit/{id}',[\App\Http\Controllers\ProductController::class,"edit"]);
 Route::post('/products/update/{id}',[\App\Http\Controllers\ProductController::class,"update"]);
 
+Route::get('/user',[\App\Http\Controllers\UserController::class,"all"]);
+Route::get('/user/new',[\App\Http\Controllers\UserController::class,"form"]);
+Route::post('/user/save',[\App\Http\Controllers\UserController::class,"save"]);
+Route::get('/user/remove/{id}',[\App\Http\Controllers\UserController::class,"delete"]);
+Route::get('/user/edit/{id}',[\App\Http\Controllers\UserController::class,"edit"]);
+Route::get('/user/update/{id}',[\App\Http\Controllers\UserController::class,"update"]);
+

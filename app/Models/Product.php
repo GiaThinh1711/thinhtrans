@@ -21,9 +21,8 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
     public function GetImage(){
-        if($this->image){
+        if($this -> image){
             return asset("upload/".$this->image);
         }
-        return asset("upload/default.png");
     }
 }

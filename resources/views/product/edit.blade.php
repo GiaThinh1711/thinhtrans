@@ -35,7 +35,7 @@
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form action="{{url("/products/update",["id"=>$item->id])}}" method="post">
+                            <form action="{{url("admin/products/update",["id"=>$item->id])}}" method="post">
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Product name</label>

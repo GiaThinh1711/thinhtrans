@@ -24,7 +24,7 @@
                             <div class="card-header">
                                 <h3 class="card-title">Sửa sản phẩm</h3>
                             </div>
-                            <form action="{{url("/categories/update",["id"=>$cat->id])}}" method="post">
+                            <form action="{{url("admin/categories/update",["id"=>$cat->id])}}" method="post">
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Category name</label>

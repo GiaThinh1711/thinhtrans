@@ -36,8 +36,7 @@
                             <!-- /.card-header -->
                             <!-- form start -->
                             <div class="card-body">
-                                <form action="{{url("/products/save")}}" method="post" class="col-md-6"
-                                      enctype="multipart/form-data">
+                                <form action="{{url("/products/save")}}" method="post" class="col-md-6" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label>Name</label>

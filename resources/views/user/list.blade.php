@@ -15,8 +15,7 @@
 {{--            <div class="container-fluid">--}}
 {{--                <div class="row mb-2">--}}
 {{--                    <div class="col-sm-6">--}}
-{{--                        <h1>Category</h1>--}}
-{{--                        @can("user-type")<a href="{{url("admin/categories/new")}}">Thêm mới</a>@endcan--}}
+{{--                        <h1>User</h1>--}}
 {{--                    </div>--}}
 {{--                    <div class="col-sm-6">--}}
 {{--                        <ol class="breadcrumb float-sm-right">--}}
@@ -32,34 +31,35 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-
                         <!-- /.card -->
-
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Category Table</h3>
+                                <h3 class="card-title">User Table</h3>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body p-0">
                                 <table class="table table-condensed">
                                     <thead>
                                     <tr>
-                                        <th style="width: 10px">Id</th>
-                                        <th >Name</th>
+                                        <th>Id</th>
+                                        <th style="width: 10px">Name</th>
+                                        <th >Email</th>
                                         <th >Created_at</th>
                                         <th >Updated_at</th>
                                         <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach ($categories as $cat)
+                                    @foreach ($user as $us)
                                         <tr>
-                                            <td>{{$cat->id}}</td>
-                                            <td>{{$cat->name}}</td>
-{{--                                            <td>{{$cat->product_count}}</td>--}}
-                                            <td>{{$cat->created_at}}</td>
-                                            <td>{{$cat->updated_at}}</td>
-                                            @can("user-type")<td><a href="{{url("/categories/remove",["id"=>$cat->id])}}"><box-icon type='solid' name='trash' color="gray"></box-icon></a><a href="{{url("admin/categories/edit",["id"=>$cat->id])}}">&ensp;&ensp;<box-icon type='solid' name='edit'></box-icon></a> </td>@endcan
+                                            <td>{{$us->id}}</td>
+                                            <td>{{$us->name}}</td>
+                                            <td>{{$us->email}}</td>
+                                            {{--                                            <td>{{$cat->product_count}}</td>--}}
+                                            <td>{{$us->created_at}}</td>
+                                            <td>{{$us->updated_at}}</td>
+                                            @can("user-type")<td><a href="{{url("/user/remove",["id"=>$us->id])}}"><box-icon type='solid' name='trash' color="gray"></box-icon></a></td>@endcan
+{{--                                            <a href="{{url("admin/user/edit",["id"=>$us->id])}}">&ensp;&ensp;<box-icon type='solid' name='edit'></box-icon></a>--}}
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -95,3 +95,4 @@
 <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </body>
 </html>
+
