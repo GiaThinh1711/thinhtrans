@@ -14,7 +14,6 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::match(["get", "post"], "login", [LoginController::class, "login"])->name("login");
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('home');
