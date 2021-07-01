@@ -75,10 +75,10 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        'admin'=> [
-            'driver' => 'eloquent',
-            'model' => App\Models\User::class,
-        ],
+//        'admin'=> [
+//            'driver' => 'eloquent',
+//            'model' => App\Models\User::class,
+//        ],
 
         // 'users' => [
         //     'driver' => 'database',
