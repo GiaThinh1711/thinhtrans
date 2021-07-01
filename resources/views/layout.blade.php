@@ -17,7 +17,6 @@
     <x-sidebar/>
     <!-- Content Wrapper. Contains page content -->
 
-    <x-content/>
     <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->

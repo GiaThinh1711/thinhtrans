@@ -24,7 +24,7 @@ class UserController extends Controller
     {
         try {
 
-            $ud = User::create([
+             User::create([
                "name"=>$request->post("name"),
                "email"=>$request->post("email"),
                "password"=>Hash::make($request->post("password")),
@@ -34,8 +34,6 @@ class UserController extends Controller
         }catch (\Exception $e){
             abort(403);
         }
-
-
     }
 
     public function delete($id){

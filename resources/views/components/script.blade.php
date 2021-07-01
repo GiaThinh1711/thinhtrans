@@ -23,3 +23,4 @@
 <script src="{{asset("dist/js/pages/dashboard2.js")}}"></script>
 {{--Box-icons--}}
 <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
