@@ -14,7 +14,7 @@ class UpdateTableUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer("users_type")->after("updated_at");
+            $table->integer("users_type")->after("updated_at")->nullable();
         });
     }
 
