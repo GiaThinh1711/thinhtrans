@@ -6,7 +6,7 @@
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__wobble" src="{{asset("dist/img/gg.jpg")}}" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__wobble" src="{{asset("dist/img/ff.jpg")}}" alt="AdminLTELogo" height="80" width="80">
     </div>
 @yield("main")
     <!-- Navbar -->
