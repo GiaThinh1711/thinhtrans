@@ -336,19 +336,19 @@
                                                 <a class="users-list-name" href="#">Duy Tùng</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="{{asset("dist/img/chó tùng.jpg")}}"
+                                                <img src="{{asset("dist/img/tung.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Duy Tùng</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="{{asset("dist/img/chó tùng.jpg")}}"
+                                                <img src="{{asset("dist/img/manh.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
-                                                <a class="users-list-name" href="#">Chó Tùng</a>
+                                                <a class="users-list-name" href="#">Mạnh VG</a>
                                             </li>
                                             <li class="col-md-3">
-                                                <img src="{{asset("dist/img/chó tùng.jpg")}}"
+                                                <img src="{{asset("dist/img/manh.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
-                                                <a class="users-list-name" href="#">Chó Tùng</a>
+                                                <a class="users-list-name" href="#">Mạnh VG</a>
                                             </li>
                                         </ul>
                                         <!-- /.users-list -->
