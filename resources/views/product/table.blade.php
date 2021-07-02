@@ -38,7 +38,7 @@
                                 <h3 class="card-title">Products Table</h3>
                             </div>
                             <!-- /.card-header -->
-                            <div class="card-body table-responsive p-0" style="height: 300px;">
+                            <div class="card-body table-responsive p-0">
                                 <table class="table table-head-fixed">
                                     <thead>
                                     <tr>

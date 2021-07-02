@@ -99,7 +99,12 @@ class ProductController extends Controller
 //        ]);
         $item = Product::findOrFail($id);
         $item->update([
-            "name"=>$request->get("name")
+            "name"=>$request->get("name"),
+            "image"=>$request->get("name"),
+            "des"=>$request->get("des"),
+            "price"=>$request->get("price"),
+            "qty"=>$request->get("qty"),
+            "categories_id"=>$request->get("categories_id")
         ]);
         return redirect()->to("products");
     }

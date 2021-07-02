@@ -43,19 +43,19 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Image</label>
-                                        <input type="file" name="name" value="{{$item->image}}" class="form-control" placeholder="Tên danh mục">
+                                        <input type="file" name="image" value="{{$item->image}}" class="form-control" placeholder="Tên danh mục">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Description</label>
-                                        <input type="text" name="name" value="{{$item->des}}" class="form-control" placeholder="Tên danh mục">
+                                        <input type="text" name="des" value="{{$item->des}}" class="form-control" placeholder="Tên danh mục">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Price</label>
-                                        <input type="number" name="name" value="{{$item->price}}" class="form-control" placeholder="Tên danh mục">
+                                        <input type="number" name="price" value="{{$item->price}}" class="form-control" placeholder="Tên danh mục">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Qty</label>
-                                        <input type="number" name="name" value="{{$item->qty}}" class="form-control" placeholder="Tên danh mục">
+                                        <input type="number" name="qty" value="{{$item->qty}}" class="form-control" placeholder="Tên danh mục">
                                     </div>
                                     <div class="form-group">
                                         <label>Category</label>
