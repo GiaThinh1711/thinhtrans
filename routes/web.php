@@ -18,6 +18,9 @@ use App\Http\Controllers\LoginController;
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('home');
 })->name('dashboard');
+Route::get('/',function (){
+    return view('spa_view');
+});
 
 //admin
 Route::get('/',[\App\Http\Controllers\WebController::class,"home"]);
@@ -42,4 +45,5 @@ Route::post('/user/save',[\App\Http\Controllers\UserController::class,"save"]);
 Route::get('/user/remove/{id}',[\App\Http\Controllers\UserController::class,"delete"]);
 Route::get('/user/edit/{id}',[\App\Http\Controllers\UserController::class,"edit"]);
 Route::get('/user/update/{id}',[\App\Http\Controllers\UserController::class,"update"]);
-
+//api danh sach san pham
+Route::get("/product-list",[WebController::class,"productList"]);
