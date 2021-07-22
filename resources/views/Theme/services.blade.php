@@ -1,8 +1,8 @@
 @extends("Theme.layout")
 @section("main")
-    <div class="agileits_header">
+    <div class="agileits_header"    >
         <div class="w3l_offers">
-            <a href="products.html">Today's special Offers !</a>
+            <a href="{{asset("user/products")}}">Today's special Offers !</a>
         </div>
         <div class="w3l_search">
             <form action="#" method="post">
@@ -26,8 +26,8 @@
                     <div class="mega-dropdown-menu">
                         <div class="w3ls_vegetables">
                             <ul class="dropdown-menu drp-mnu">
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="login.html">Sign Up</a></li>
+                                <li><a href="{{asset("user/login")}}">Login</a></li>
+                                <li><a href="{{asset("user/login")}}">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
             </ul>
         </div>
         <div class="w3l_header_right1">
-            <h2><a href="mail.html">Contact Us</a></h2>
+            <h2><a href="{{asset("user/mail")}}">Contact Us</a></h2>
         </div>
         <div class="clearfix"> </div>
     </div>
@@ -58,14 +58,14 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+                <h1><a href="{{asset("user/index")}}"><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="events.html">Events</a><i>/</i></li>
-                    <li><a href="about.html">About Us</a><i>/</i></li>
-                    <li><a href="products.html">Best Deals</a><i>/</i></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="{{asset("user/events")}}">Events</a><i>/</i></li>
+                    <li><a href="{{asset("about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{asset("user/products")}}">Best Deals</a><i>/</i></li>
+                    <li><a href="{{asset("user/services")}}">Services</a></li>
                 </ul>
             </div>
             <div class="w3ls_logo_products_left1">
@@ -82,8 +82,8 @@
     <div class="products-breadcrumb">
         <div class="container">
             <ul>
-                <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-                <li>Services</li>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{asset("user/index")}}">Home</a><span>|</span></li>
+                <li>About Us</li>
             </ul>
         </div>
     </div>
@@ -104,93 +104,74 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                     <ul class="nav navbar-nav nav_1">
-                        <li><a href="products.html">Branded Foods</a></li>
-                        <li><a href="household.html">Households</a></li>
+                        <li><a href="{{asset("user/products")}}">Branded Foods</a></li>
+
                         <li class="dropdown mega-dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="vegetables.html">Vegetables</a></li>
-                                        <li><a href="vegetables.html">Fruits</a></li>
+                                        <li><a href="{{asset("user/vegetables")}}">Vegetables</a></li>
+                                        <li><a href="{{asset("user/vegetables")}}">Fruits</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="kitchen.html">Kitchen</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
+                        <li><a href="{{asset("user/kitchen")}}">Kitchen</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="drinks.html">Soft Drinks</a></li>
-                                        <li><a href="drinks.html">Juices</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="pet.html">Pet Food</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="frozen.html">Frozen Snacks</a></li>
-                                        <li><a href="frozen.html">Frozen Nonveg</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="bread.html">Bread & Bakery</a></li>
+                        <li><a href="{{asset("user/bread")}}">Bread & Bakery</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
         </div>
         <div class="w3l_banner_nav_right">
-            <!-- services -->
-            <div class="services">
-                <h3>Services</h3>
-                <div class="w3ls_service_grids">
-                    <div class="col-md-5 w3ls_service_grid_left">
-                        <h4>cum soluta nobis est</h4>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                            voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
-                            repellat.</p>
+            <!-- about -->
+            <div class="privacy about">
+                <h3>About Us</h3>
+                <p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                    rerum facilis est et expedita distinctio.</p>
+                <div class="agile_about_grids">
+                    <div class="col-md-6 agile_about_grid_right">
+                        <img src="{{asset("images/31.jpg")}}" alt=" " class="img-responsive" />
                     </div>
-                    <div class="col-md-7 w3ls_service_grid_right">
-                        <div class="col-md-4 w3ls_service_grid_right_1">
-                            <img src="images/18.jpg" alt=" " class="img-responsive" />
-                        </div>
-                        <div class="col-md-4 w3ls_service_grid_right_1">
-                            <img src="images/19.jpg" alt=" " class="img-responsive" />
-                        </div>
-                        <div class="col-md-4 w3ls_service_grid_right_1">
-                            <img src="images/20.jpg" alt=" " class="img-responsive" />
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="w3ls_service_grids1">
-                    <div class="col-md-6 w3ls_service_grids1_left">
-                        <img src="images/4.jpg" alt=" " class="img-responsive" />
-                    </div>
-                    <div class="col-md-6 w3ls_service_grids1_right">
-                        <ul>
-                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>et voluptates repudiandae sint et molestiae</li>
-                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>rerum necessitatibus saepe eveniet ut</li>
-                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>placeat facere possimus, omnis voluptas</li>
-                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Et harum quidem rerum facilis est et expedita</li>
-                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>similique sunt in culpa qui officia deserunt</li>
-                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>odio dignissimos ducimus qui blanditiis</li>
-                        </ul>
-                        <a href="single.html">Shop Now</a>
+                    <div class="col-md-6 agile_about_grid_left">
+                        <ol>
+                            <li>laborum et dolorum fuga</li>
+                            <li>corrupti quos dolores et quas</li>
+                            <li>est et expedita distinctio</li>
+                            <li>deleniti atque corrupti quos</li>
+                            <li>excepturi sint occaecati cupiditate</li>
+                            <li>accusamus et iusto odio</li>
+                        </ol>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
             </div>
-            <!-- //services -->
+            <!-- //about -->
         </div>
         <div class="clearfix"></div>
     </div>
@@ -220,8 +201,8 @@
             </div>
             <div class="clearfix"> </div>
             <!-- Stats-Number-Scroller-Animation-JavaScript -->
-            <script src="js/waypoints.min.js"></script>
-            <script src="js/counterup.min.js"></script>
+            <script src="{{asset("js/waypoints.min.js")}}"></script>
+            <script src="{{asset("js/counterup.min.js")}}"></script>
             <script>
                 jQuery(document).ready(function( $ ) {
                     $('.counter').counterUp({

@@ -1,8 +1,8 @@
 @extends("Theme.layout")
 @section("main")
-    <div class="agileits_header">
+    <div class="agileits_header"    >
         <div class="w3l_offers">
-            <a href="products.html">Today's special Offers !</a>
+            <a href="{{asset("user/products")}}">Today's special Offers !</a>
         </div>
         <div class="w3l_search">
             <form action="#" method="post">
@@ -26,8 +26,8 @@
                     <div class="mega-dropdown-menu">
                         <div class="w3ls_vegetables">
                             <ul class="dropdown-menu drp-mnu">
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="login.html">Sign Up</a></li>
+                                <li><a href="{{asset("user/login")}}">Login</a></li>
+                                <li><a href="{{asset("user/login")}}">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
             </ul>
         </div>
         <div class="w3l_header_right1">
-            <h2><a href="mail.html">Contact Us</a></h2>
+            <h2><a href="{{asset("user/mail")}}">Contact Us</a></h2>
         </div>
         <div class="clearfix"> </div>
     </div>
@@ -58,14 +58,14 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+                <h1><a href="{{asset("user/index")}}"><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="events.html">Events</a><i>/</i></li>
-                    <li><a href="about.html">About Us</a><i>/</i></li>
-                    <li><a href="products.html">Best Deals</a><i>/</i></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="{{asset("user/events")}}">Events</a><i>/</i></li>
+                    <li><a href="{{asset("about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{asset("user/products")}}">Best Deals</a><i>/</i></li>
+                    <li><a href="{{asset("user/services")}}">Services</a></li>
                 </ul>
             </div>
             <div class="w3ls_logo_products_left1">
@@ -82,8 +82,8 @@
     <div class="products-breadcrumb">
         <div class="container">
             <ul>
-                <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-                <li>FAQ's</li>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{asset("user/index")}}">Home</a><span>|</span></li>
+                <li>About Us</li>
             </ul>
         </div>
     </div>
@@ -104,183 +104,74 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                     <ul class="nav navbar-nav nav_1">
-                        <li><a href="products.html">Branded Foods</a></li>
-                        <li><a href="household.html">Households</a></li>
+                        <li><a href="{{asset("user/products")}}">Branded Foods</a></li>
+
                         <li class="dropdown mega-dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="vegetables.html">Vegetables</a></li>
-                                        <li><a href="vegetables.html">Fruits</a></li>
+                                        <li><a href="{{asset("user/vegetables")}}">Vegetables</a></li>
+                                        <li><a href="{{asset("user/vegetables")}}">Fruits</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="kitchen.html">Kitchen</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
+                        <li><a href="{{asset("user/kitchen")}}">Kitchen</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="drinks.html">Soft Drinks</a></li>
-                                        <li><a href="drinks.html">Juices</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="pet.html">Pet Food</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="frozen.html">Frozen Snacks</a></li>
-                                        <li><a href="frozen.html">Frozen Nonveg</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="bread.html">Bread & Bakery</a></li>
+                        <li><a href="{{asset("user/bread")}}">Bread & Bakery</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
         </div>
         <div class="w3l_banner_nav_right">
-            <!-- faq -->
-            <div class="faq">
-                <h3>FAQ's</h3>
-                <div class="panel-group w3l_panel_group_faq" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>assumenda est cliche reprehenderit
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
+            <!-- about -->
+            <div class="privacy about">
+                <h3>About Us</h3>
+                <p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                    rerum facilis est et expedita distinctio.</p>
+                <div class="agile_about_grids">
+                    <div class="col-md-6 agile_about_grid_right">
+                        <img src="{{asset("images/31.jpg")}}" alt=" " class="img-responsive" />
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Itaque earum rerum
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
+                    <div class="col-md-6 agile_about_grid_left">
+                        <ol>
+                            <li>laborum et dolorum fuga</li>
+                            <li>corrupti quos dolores et quas</li>
+                            <li>est et expedita distinctio</li>
+                            <li>deleniti atque corrupti quos</li>
+                            <li>excepturi sint occaecati cupiditate</li>
+                            <li>accusamus et iusto odio</li>
+                        </ol>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>autem accusamus terry quibusdam
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFour">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>excepturi sint cliche reprehenderit
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>dolorem eum fugiat quo voluptas nulla pariatur
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSix">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>terry eiusmod high life accusamus
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSeven">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>quasi architecto beatae vitae dicta
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingEight">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>iure reprehenderit qui in ea voluptate velit esse
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingNine">
-                            <h4 class="panel-title asd">
-                                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>reprehenderit qui in ea voluptate velit esse quam nihil
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                            <div class="panel-body panel_text">
-                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                            </div>
-                        </div>
-                    </div>
+                    <div class="clearfix"> </div>
                 </div>
             </div>
-            <!-- //faq -->
+            <!-- //about -->
         </div>
         <div class="clearfix"></div>
     </div>
@@ -300,36 +191,33 @@
             <div class="clearfix"> </div>
         </div>
     </div>
-    <!-- //newsletter -->
-    <!-- footer -->
+    <!-- //newsletter -->   <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="col-md-3 w3_footer_grid">
                 <h3>information</h3>
                 <ul class="w3_footer_grid_list">
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Best Deals</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="short-codes.html">Short Codes</a></li>
+                    <li><a href="{{asset("user/events")}}">Events</a></li>
+                    <li><a href="{{asset("user/about")}}">About Us</a></li>
+                    <li><a href="{{asset("user/products")}}">Best Deals</a></li>
+                    <li><a href="{{asset("user/services")}}">Services</a></li>
+
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
                 <h3>policy info</h3>
                 <ul class="w3_footer_grid_list">
-                    <li><a href="faqs.html">FAQ</a></li>
-                    <li><a href="privacy.html">privacy policy</a></li>
-                    <li><a href="privacy.html">terms of use</a></li>
+                    <li><a href="{{asset("user/faqs")}}">FAQ</a></li>
+                    <li><a href="{{asset("user/privacy")}}">privacy policy</a></li>
+                    <li><a href="{{asset("user/privacy")}}">terms of use</a></li>
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
                 <h3>what in stores</h3>
                 <ul class="w3_footer_grid_list">
-                    <li><a href="pet.html">Pet Food</a></li>
-                    <li><a href="frozen.html">Frozen Snacks</a></li>
-                    <li><a href="kitchen.html">Kitchen</a></li>
-                    <li><a href="products.html">Branded Foods</a></li>
-                    <li><a href="household.html">Households</a></li>
+
+                    <li><a href="{{asset("user/kitchen")}}">Kitchen</a></li>
+                    <li><a href="{{asset("user/products")}}">Branded Foods</a></li>
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
@@ -348,7 +236,7 @@
                 <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
                     <div class="w3_footer_grid_bottom">
                         <h4>100% secure payments</h4>
-                        <img src="images/card.png" alt=" " class="img-responsive" />
+                        <img src="{{asset("images/card.png")}}" alt=" " class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">

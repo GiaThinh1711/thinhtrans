@@ -1,8 +1,8 @@
 @extends("Theme.layout")
 @section("main")
-    <div class="agileits_header">
+    <div class="agileits_header"    >
         <div class="w3l_offers">
-            <a href="products.blade.php">Today's special Offers !</a>
+            <a href="{{asset("user/products")}}">Today's special Offers !</a>
         </div>
         <div class="w3l_search">
             <form action="#" method="post">
@@ -11,7 +11,7 @@
             </form>
         </div>
         <div class="product_list_header">
-            <form action="{{url("user/checkout")}}}" method="post" class="last">
+            <form action="#" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
@@ -26,8 +26,8 @@
                     <div class="mega-dropdown-menu">
                         <div class="w3ls_vegetables">
                             <ul class="dropdown-menu drp-mnu">
-                                <li><a href="{{url("user/login")}}">Login</a></li>
-                                <li><a href="{{url("user/login")}}">Sign Up</a></li>
+                                <li><a href="{{asset("user/login")}}">Login</a></li>
+                                <li><a href="{{asset("user/login")}}">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
             </ul>
         </div>
         <div class="w3l_header_right1">
-            <h2><a href="{{url("user/mail")}}">Contact Us</a></h2>
+            <h2><a href="{{asset("user/mail")}}">Contact Us</a></h2>
         </div>
         <div class="clearfix"> </div>
     </div>
@@ -58,14 +58,14 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="{{url("user/layout")}}"><span>Grocery</span> Store</a></h1>
+                <h1><a href="{{asset("user/index")}}"><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="{{url("user/events")}}">Events</a><i>/</i></li>
-                    <li><a href="{{url("user/about")}}">About Us</a><i>/</i></li>
-                    <li><a href="{{url("user/products")}}">Best Deals</a><i>/</i></li>
-                    <li><a href="{{url("user/services")}}">Services</a></li>
+                    <li><a href="{{asset("user/events")}}">Events</a><i>/</i></li>
+                    <li><a href="{{asset("about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{asset("user/products")}}">Best Deals</a><i>/</i></li>
+                    <li><a href="{{asset("user/services")}}">Services</a></li>
                 </ul>
             </div>
             <div class="w3ls_logo_products_left1">
@@ -94,98 +94,78 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                     <ul class="nav navbar-nav nav_1">
-                        <li><a href="{{url("user/products")}}">Branded Foods</a></li>
-                        <li><a href="{{url("user/products")}}">Households</a></li>
+                        <li><a href="{{asset("user/products")}}">Branded Foods</a></li>
+
                         <li class="dropdown mega-dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="{{url("user/vegetables")}}">Vegetables</a></li>
-                                        <li><a href="{{url("user/vegetables")}}">Fruits</a></li>
+                                        <li><a href="{{asset("user/vegetables")}}">Vegetables</a></li>
+                                        <li><a href="{{asset("user/vegetables")}}">Fruits</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="kitchen ">Kitchen</a></li>
-                        <li><a href="short-codes ">Short Codes</a></li>
+                        <li><a href="{{asset("user/kitchen")}}">Kitchen</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="{{url("user/vegetables")}}">Soft Drinks</a></li>
-                                        <li><a href="{{url("user/vegetables")}}">Juices</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="{{url("user/products")}}">Pet Food</a></li>
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="{{url("user/products")}}">Frozen Snacks</a></li>
-                                        <li><a href="{{url("user/products")}}">Frozen Nonveg</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="{{url("user/products")}}">Bread & Bakery</a></li>
+                        <li><a href="{{asset("user/bread")}}">Bread & Bakery</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
         </div>
         <div class="w3l_banner_nav_right">
-            <section class="slider">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <div class="w3l_banner_nav_right_banner">
-                                <h3>Make your <span>food</span> with Spicy.</h3>
-                                <div class="more">
-                                    <a href="{{url("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="w3l_banner_nav_right_banner1">
-                                <h3>Make your <span>food</span> with Spicy.</h3>
-                                <div class="more">
-                                    <a href="{{url("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="w3l_banner_nav_right_banner2">
-                                <h3>upto <i>50%</i> off.</h3>
-                                <div class="more">
-                                    <a href="{{url("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <!-- about -->
+            <div class="privacy about">
+                <h3>About Us</h3>
+                <p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                    rerum facilis est et expedita distinctio.</p>
+                <div class="agile_about_grids">
+                    <div class="col-md-6 agile_about_grid_right">
+                        <img src="{{asset("images/31.jpg")}}" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="col-md-6 agile_about_grid_left">
+                        <ol>
+                            <li>laborum et dolorum fuga</li>
+                            <li>corrupti quos dolores et quas</li>
+                            <li>est et expedita distinctio</li>
+                            <li>deleniti atque corrupti quos</li>
+                            <li>excepturi sint occaecati cupiditate</li>
+                            <li>accusamus et iusto odio</li>
+                        </ol>
+                    </div>
+                    <div class="clearfix"> </div>
                 </div>
-            </section>
-            <!-- flexSlider -->
-            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-            <script defer src="js/jquery.flexslider.js"></script>
-            <script type="text/javascript">
-                $(window).load(function(){
-                    $('.flexslider').flexslider({
-                        animation: "slide",
-                        start: function(slider){
-                            $('body').removeClass('loading');
-                        }
-                    });
-                });
-            </script>
-            <!-- //flexSlider -->
+            </div>
+            <!-- //about -->
         </div>
         <div class="clearfix"></div>
     </div>
-    <!-- banner -->
+    <!-- //banner -->
     <div class="banner_bottom">
         <div class="wthree_banner_bottom_left_grid_sub">
         </div>
