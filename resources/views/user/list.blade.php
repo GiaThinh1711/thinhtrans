@@ -10,22 +10,6 @@
     <x-sidebar/>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper col-md-10" >
-        <!-- Content Header (Page header) -->
-{{--        <section class="content-header">--}}
-{{--            <div class="container-fluid">--}}
-{{--                <div class="row mb-2">--}}
-{{--                    <div class="col-sm-6">--}}
-{{--                        <h1>User</h1>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-sm-6">--}}
-{{--                        <ol class="breadcrumb float-sm-right">--}}
-{{--                            <li class="breadcrumb-item"><a href="#">Home</a></li>--}}
-{{--                            <li class="breadcrumb-item active">Category</li>--}}
-{{--                        </ol>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div><!-- /.container-fluid -->--}}
-{{--        </section>--}}
         <!-- Main content -->
         <section class="content" style="padding-top: 30px">
             <div class="container-fluid">
@@ -55,11 +39,9 @@
                                             <td>{{$us->id}}</td>
                                             <td>{{$us->name}}</td>
                                             <td>{{$us->email}}</td>
-                                            {{--                                            <td>{{$cat->product_count}}</td>--}}
-                                            <td>{{$us->created_at}}</td>
-                                            <td>{{$us->updated_at}}</td>
+                                            <td>{{formatDate($us->created_at)}}</td>
+                                            <td>{{formatDate($us->updated_at)}}</td>
                                             @can("user-type")<td><a href="{{url("/user/remove",["id"=>$us->id])}}"><box-icon type='solid' name='trash' color="gray"></box-icon></a></td>@endcan
-{{--                                            <a href="{{url("admin/user/edit",["id"=>$us->id])}}">&ensp;&ensp;<box-icon type='solid' name='edit'></box-icon></a>--}}
                                         </tr>
                                     @endforeach
                                     </tbody>

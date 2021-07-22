@@ -11,23 +11,6 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper col-md-10">
         <!-- Content Header (Page header) -->
-{{--        <section class="content-header">--}}
-{{--            <div class="container-fluid">--}}
-{{--                <div class="row mb-2">--}}
-{{--                    <div class="col-sm-6">--}}
-{{--                        <h1>Simple Tables</h1>--}}
-{{--                        <a href="{{url("/products/new")}}">Thêm Sản Phẩm Mới</a>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-sm-6">--}}
-{{--                        <ol class="breadcrumb float-sm-right">--}}
-{{--                            <li class="breadcrumb-item"><a href="#">Home</a></li>--}}
-{{--                            <li class="breadcrumb-item active">Simple Tables</li>--}}
-{{--                        </ol>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div><!-- /.container-fluid -->--}}
-{{--        </section>--}}
-
         <!-- Main content -->
         <section class="content" style="margin-top: 30px">
             <div class="container-fluid">
@@ -64,9 +47,10 @@
                                             <td>{{$item->price}}</td>
                                             <td>{{$item->qty}}</td>
                                             <td>{{$item->Category->__get("name")}}</td>
-                                            <td>{{$item->created_at}}</td>
-                                            <td>{{$item->updated_at}}</td>
-                                            @can("user-type")<td><a href="{{url("/products/remove",["id"=>$item->id])}}"><box-icon type='solid' name='trash' color="gray"></box-icon></a><a href="{{url("/products/edit",["id"=>$item->id])}}">&ensp;&ensp;<box-icon type='solid' name='edit'></box-icon></a></td>@endcan
+                                            <td>{{formatDate($item->created_at)}}</td>
+                                            <td>{{formatDate($item->updated_at)}}</td>
+                                            @can("user-type")<td><a href="{{url("/products/remove",["id"=>$item->id])}}"><box-icon type='solid' name='trash' color="gray"></box-icon></a><a href="{{url("admin/products/edit",["id"=>$item->id])}}">&ensp;&ensp;<box-icon type='solid' name='edit'></box-icon></a></td>@endcan
+                                            <td><a href="{{url("admin/products/add-to-cart",["id"=>$item->id])}}">Add to cart</a>
                                         </tr>
                                     @endforeach
                                     </tbody>
