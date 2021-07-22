@@ -1,6 +1,7 @@
 @extends("Theme.layout")
 @section("main")
-    <div class="agileits_header"    >
+    <!-- header -->
+    <div class="agileits_header">
         <div class="w3l_offers">
             <a href="{{asset("user/products")}}">Today's special Offers !</a>
         </div>
@@ -58,12 +59,12 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="{{asset("user/index")}}"><span>Grocery</span> Store</a></h1>
+                <h1><a href="{{asset("user/home")}}"><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
                     <li><a href="{{asset("user/events")}}">Events</a><i>/</i></li>
-                    <li><a href="{{asset("about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{asset("user/about")}}">About Us</a><i>/</i></li>
                     <li><a href="{{asset("user/products")}}">Best Deals</a><i>/</i></li>
                     <li><a href="{{asset("user/services")}}">Services</a></li>
                 </ul>
@@ -136,36 +137,54 @@
             </nav>
         </div>
         <div class="w3l_banner_nav_right">
-            <!-- about -->
-            <div class="privacy about">
-                <h3>About Us</h3>
-                <p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                    rerum facilis est et expedita distinctio.</p>
-                <div class="agile_about_grids">
-                    <div class="col-md-6 agile_about_grid_right">
-                        <img src="{{asset("images/31.jpg")}}" alt=" " class="img-responsive" />
-                    </div>
-                    <div class="col-md-6 agile_about_grid_left">
-                        <ol>
-                            <li>laborum et dolorum fuga</li>
-                            <li>corrupti quos dolores et quas</li>
-                            <li>est et expedita distinctio</li>
-                            <li>deleniti atque corrupti quos</li>
-                            <li>excepturi sint occaecati cupiditate</li>
-                            <li>accusamus et iusto odio</li>
-                        </ol>
-                    </div>
-                    <div class="clearfix"> </div>
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="w3l_banner_nav_right_banner">
+                                <h3>Make your <span>food</span> with Spicy.</h3>
+                                <div class="more">
+                                    <a href="{{asset("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_nav_right_banner1">
+                                <h3>Make your <span>food</span> with Spicy.</h3>
+                                <div class="more">
+                                    <a href="{{asset("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="w3l_banner_nav_right_banner2">
+                                <h3>upto <i>50%</i> off.</h3>
+                                <div class="more">
+                                    <a href="{{asset("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <!-- //about -->
+            </section>
+            <!-- flexSlider -->
+            <link rel="stylesheet" href="{{asset("css/flexslider.css")}}" type="text/css" media="screen" property="" />
+            <script defer src="{{asset("js/jquery.flexslider.js")}}"></script>
+            <script type="text/javascript">
+                $(window).load(function(){
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                            $('body').removeClass('loading');
+                        }
+                    });
+                });
+            </script>
+            <!-- //flexSlider -->
         </div>
         <div class="clearfix"></div>
     </div>
-    <!-- //banner -->
+    <!-- banner -->
     <div class="banner_bottom">
         <div class="wthree_banner_bottom_left_grid_sub">
         </div>
@@ -206,17 +225,17 @@
                 <div class="col-md-3 top_brand_left">
                     <div class="hover14 column">
                         <div class="agile_top_brand_left_grid">
-                            <div class="tag"><img src="{{asset("images/tag.png")}}" alt=" " class="img-responsive" /></div>
+                            <div class="tag"><img src="{{asset("user/images/tag.png")}}" alt=" " class="img-responsive" /></div>
                             <div class="agile_top_brand_left_grid1">
                                 <figure>
                                     <div class="snipcart-item block" >
                                         <div class="snipcart-thumb">
-                                            <a href="{{url("user/single")}}"><img title=" " alt=" " src="{{asset("images/1.png")}}" /></a>
+                                            <a href="{{asset("user/single")}}"><img title=" " alt=" " src="{{asset("images/1.png")}}" /></a>
                                             <p>fortune sunflower oil</p>
                                             <h4>$7.99 <span>$10.00</span></h4>
                                         </div>
                                         <div class="snipcart-details top_brand_home_details">
-                                            <form action="{{url("user/checkout")}}" method="post">
+                                            <form action="{{asset("user/checkout")}}" method="post">
                                                 <fieldset>
                                                     <input type="hidden" name="cmd" value="_cart" />
                                                     <input type="hidden" name="add" value="1" />
@@ -229,7 +248,9 @@
                                                     <input type="hidden" name="cancel_return" value=" " />
                                                     <input type="submit" name="submit" value="Add to cart" class="button" />
                                                 </fieldset>
+
                                             </form>
+
                                         </div>
                                     </div>
                                 </figure>
@@ -244,7 +265,7 @@
                                 <figure>
                                     <div class="snipcart-item block" >
                                         <div class="snipcart-thumb">
-                                            <a href="{{url("user/single")}}"><img title=" " alt=" " src="{{asset("images/3.png")}}" /></a>
+                                            <a href="{{asset("user/single")}}"><img title=" " alt=" " src="{{asset("images/3.png")}}" /></a>
                                             <p>basmati rise (5 Kg)</p>
                                             <h4>$11.99 <span>$15.00</span></h4>
                                         </div>
@@ -280,7 +301,7 @@
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                            <a href="{{url("user/single")}}"><img src="{{asset("images/2.png")}}" alt=" " class="img-responsive" /></a>
+                                            <a href="{{asset("user/single")}}"><img src="{{asset("images/2.png")}}" alt=" " class="img-responsive" /></a>
                                             <p>Pepsi soft drink (2 Ltr)</p>
                                             <h4>$8.00 <span>$10.00</span></h4>
                                         </div>
@@ -316,7 +337,7 @@
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                            <a href="{{url("user/single")}}"><img src="{{asset("images/4.png")}}" alt=" " class="img-responsive" /></a>
+                                            <a href="{{asset("user/single")}}"><img src="{{asset("user/images/4.png")}}" alt=" " class="img-responsive" /></a>
                                             <p>dogs food (4 Kg)</p>
                                             <h4>$9.00 <span>$11.00</span></h4>
                                         </div>
@@ -355,16 +376,16 @@
                 <div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
                     <div class="w3l_fresh_vegetables_grid2">
                         <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">All Brands</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/vegetables")}}">Vegetables</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/vegetables")}}">Fruits</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Juices</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Pet Food</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Bread & Bakery</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Cleaning</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Spices</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Dry Fruits</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Dairy Products</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/products")}}">All Brands</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/vegetables")}}">Vegetables</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/vegetables")}}">Fruits</a></li>
+
+
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/bread")}}">Bread & Bakery</a></li>
+
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/products")}}">Spices</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/products")}}">Dry Fruits</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{asset("user/products")}}">Dairy Products</a></li>
                         </ul>
                     </div>
                 </div>
@@ -380,13 +401,13 @@
                                 <img src="{{asset("images/7.jpg")}}" alt=" " class="img-responsive" />
                                 <div class="w3l_fresh_vegetables_grid1_rel_pos">
                                     <div class="more m1">
-                                        <a href="products " class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                        <a href="{{asset("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="w3l_fresh_vegetables_grid1_bottom">
-                            <img src="{{asset("images/10.jpg")}}" alt=" " class="img-responsive" />
+                            <img src="{{asset("user/images/10.jpg")}}" alt=" " class="img-responsive" />
                             <div class="w3l_fresh_vegetables_grid1_bottom_pos">
                                 <h5>Special Offers</h5>
                             </div>
@@ -394,10 +415,10 @@
                     </div>
                     <div class="col-md-4 w3l_fresh_vegetables_grid">
                         <div class="w3l_fresh_vegetables_grid1">
-                            <img src="{{asset("images/9.jpg")}}" alt=" " class="img-responsive" />
+                            <img src="{{asset("user/images/9.jpg")}}" alt=" " class="img-responsive" />
                         </div>
                         <div class="w3l_fresh_vegetables_grid1_bottom">
-                            <img src="{{asset("images/11.jpg")}}" alt=" " class="img-responsive" />
+                            <img src="{{asset("user/images/11.jpg")}}" alt=" " class="img-responsive" />
                         </div>
                     </div>
                     <div class="clearfix"> </div>
@@ -431,4 +452,5 @@
             <div class="clearfix"> </div>
         </div>
     </div>
+    <!-- //newsletter -->
 @endsection
