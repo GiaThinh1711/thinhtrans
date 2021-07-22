@@ -128,9 +128,11 @@
         </li>
         <li class="nav-item">
             <form style="margin-top: 6px;width: 50px;" method="POST" action="http://127.0.0.1:8000/logout">
-                <input type="hidden" name="_token" value="O7jZLbxTl1vPip0FHbG8jSGpQG8uunH8pYRpkd7u">
+                @csrf
                 <a class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition" href="http://127.0.0.1:8000/logout" onclick="event.preventDefault();
-                                                this.closest('form').submit();"><box-icon name="log-out-circle"></box-icon></a>
+                                                this.closest('form').submit();">
+                    <box-icon name="log-out-circle"></box-icon>
+                </a>
             </form>
         </li>
     </ul>

@@ -56,7 +56,6 @@
                                         <tr>
                                             <td>{{$cat->id}}</td>
                                             <td>{{$cat->name}}</td>
-{{--                                            <td>{{$cat->product_count}}</td>--}}
                                             <td>{{$cat->created_at}}</td>
                                             <td>{{$cat->updated_at}}</td>
                                             @can("user-type")<td><a href="{{url("/categories/remove",["id"=>$cat->id])}}"><box-icon type='solid' name='trash' color="gray"></box-icon></a><a href="{{url("admin/categories/edit",["id"=>$cat->id])}}">&ensp;&ensp;<box-icon type='solid' name='edit'></box-icon></a> </td>@endcan

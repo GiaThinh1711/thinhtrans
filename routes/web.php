@@ -45,5 +45,6 @@ Route::post('/user/save',[\App\Http\Controllers\UserController::class,"save"]);
 Route::get('/user/remove/{id}',[\App\Http\Controllers\UserController::class,"delete"]);
 Route::get('/user/edit/{id}',[\App\Http\Controllers\UserController::class,"edit"]);
 Route::get('/user/update/{id}',[\App\Http\Controllers\UserController::class,"update"]);
-//api danh sach san pham
-Route::get("/product-list",[WebController::class,"productList"]);
+
+Route::get("/products/add-to-cart/{id}",[\App\Http\Controllers\ProductController::class,"addToCart"]);
+Route::get("/cart",[\App\Http\Controllers\ProductController::class,"cart"]);
