@@ -160,4 +160,7 @@ class ProductController extends Controller
         }
 //        dd($cart);
     }
+    public function checkout(){
+
+    }
 }

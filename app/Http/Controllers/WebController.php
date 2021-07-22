@@ -13,13 +13,4 @@ class   WebController extends Controller
     public function aboutUs(){
         return view('aboutus');
     }
-    public function productList(){
-        $products= Product::with("Category")->get();
-        return response()->json([
-            "status"=>true,
-            "message"=>"success",
-            "products"=>$products
-        ]);
-
-    }
 }

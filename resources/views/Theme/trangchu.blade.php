@@ -11,7 +11,7 @@
             </form>
         </div>
         <div class="product_list_header">
-            <form action="#" method="post" class="last">
+            <form action="{{url("user/checkout")}}}" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
@@ -26,8 +26,8 @@
                     <div class="mega-dropdown-menu">
                         <div class="w3ls_vegetables">
                             <ul class="dropdown-menu drp-mnu">
-                                <li><a href="login.blade.php">Login</a></li>
-                                <li><a href="login.blade.php">Sign Up</a></li>
+                                <li><a href="{{url("user/login")}}">Login</a></li>
+                                <li><a href="{{url("user/login")}}">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
             </ul>
         </div>
         <div class="w3l_header_right1">
-            <h2><a href="mail.blade.php">Contact Us</a></h2>
+            <h2><a href="{{url("user/mail")}}">Contact Us</a></h2>
         </div>
         <div class="clearfix"> </div>
     </div>
@@ -58,14 +58,14 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="layout.blade.php"><span>Grocery</span> Store</a></h1>
+                <h1><a href="{{url("user/layout")}}"><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="events.blade.php">Events</a><i>/</i></li>
-                    <li><a href="about.blade.php">About Us</a><i>/</i></li>
-                    <li><a href="products.blade.php">Best Deals</a><i>/</i></li>
-                    <li><a href="services.blade.php">Services</a></li>
+                    <li><a href="{{url("user/events")}}">Events</a><i>/</i></li>
+                    <li><a href="{{url("user/about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{url("user/products")}}">Best Deals</a><i>/</i></li>
+                    <li><a href="{{url("user/services")}}">Services</a></li>
                 </ul>
             </div>
             <div class="w3ls_logo_products_left1">
@@ -94,45 +94,45 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                     <ul class="nav navbar-nav nav_1">
-                        <li><a href="products.blade.php">Branded Foods</a></li>
-                        <li><a href="household.blade.php">Households</a></li>
+                        <li><a href="{{url("user/products")}}">Branded Foods</a></li>
+                        <li><a href="{{url("user/products")}}">Households</a></li>
                         <li class="dropdown mega-dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="vegetables.blade.php">Vegetables</a></li>
-                                        <li><a href="vegetables.blade.php">Fruits</a></li>
+                                        <li><a href="{{url("user/vegetables")}}">Vegetables</a></li>
+                                        <li><a href="{{url("user/vegetables")}}">Fruits</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="kitchen.html">Kitchen</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
+                        <li><a href="kitchen ">Kitchen</a></li>
+                        <li><a href="short-codes ">Short Codes</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="drinks.html">Soft Drinks</a></li>
-                                        <li><a href="drinks.html">Juices</a></li>
+                                        <li><a href="{{url("user/vegetables")}}">Soft Drinks</a></li>
+                                        <li><a href="{{url("user/vegetables")}}">Juices</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="pet.html">Pet Food</a></li>
+                        <li><a href="{{url("user/products")}}">Pet Food</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
                                     <ul>
-                                        <li><a href="frozen.html">Frozen Snacks</a></li>
-                                        <li><a href="frozen.html">Frozen Nonveg</a></li>
+                                        <li><a href="{{url("user/products")}}">Frozen Snacks</a></li>
+                                        <li><a href="{{url("user/products")}}">Frozen Nonveg</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="bread.html">Bread & Bakery</a></li>
+                        <li><a href="{{url("user/products")}}">Bread & Bakery</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
@@ -145,7 +145,7 @@
                             <div class="w3l_banner_nav_right_banner">
                                 <h3>Make your <span>food</span> with Spicy.</h3>
                                 <div class="more">
-                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                    <a href="{{url("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </li>
@@ -153,7 +153,7 @@
                             <div class="w3l_banner_nav_right_banner1">
                                 <h3>Make your <span>food</span> with Spicy.</h3>
                                 <div class="more">
-                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                    <a href="{{url("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </li>
@@ -161,7 +161,7 @@
                             <div class="w3l_banner_nav_right_banner2">
                                 <h3>upto <i>50%</i> off.</h3>
                                 <div class="more">
-                                    <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                    <a href="{{url("user/products")}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                                 </div>
                             </div>
                         </li>
@@ -226,17 +226,17 @@
                 <div class="col-md-3 top_brand_left">
                     <div class="hover14 column">
                         <div class="agile_top_brand_left_grid">
-                            <div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+                            <div class="tag"><img src="{{asset("images/tag.png")}}" alt=" " class="img-responsive" /></div>
                             <div class="agile_top_brand_left_grid1">
                                 <figure>
                                     <div class="snipcart-item block" >
                                         <div class="snipcart-thumb">
-                                            <a href="single.html"><img title=" " alt=" " src="images/1.png" /></a>
+                                            <a href="{{url("user/single")}}"><img title=" " alt=" " src="{{asset("images/1.png")}}" /></a>
                                             <p>fortune sunflower oil</p>
                                             <h4>$7.99 <span>$10.00</span></h4>
                                         </div>
                                         <div class="snipcart-details top_brand_home_details">
-                                            <form action="checkout.html" method="post">
+                                            <form action="{{url("user/checkout")}}" method="post">
                                                 <fieldset>
                                                     <input type="hidden" name="cmd" value="_cart" />
                                                     <input type="hidden" name="add" value="1" />
@@ -249,9 +249,7 @@
                                                     <input type="hidden" name="cancel_return" value=" " />
                                                     <input type="submit" name="submit" value="Add to cart" class="button" />
                                                 </fieldset>
-
                                             </form>
-
                                         </div>
                                     </div>
                                 </figure>
@@ -266,7 +264,7 @@
                                 <figure>
                                     <div class="snipcart-item block" >
                                         <div class="snipcart-thumb">
-                                            <a href="single.html"><img title=" " alt=" " src="images/3.png" /></a>
+                                            <a href="{{url("user/single")}}"><img title=" " alt=" " src="{{asset("images/3.png")}}" /></a>
                                             <p>basmati rise (5 Kg)</p>
                                             <h4>$11.99 <span>$15.00</span></h4>
                                         </div>
@@ -296,13 +294,13 @@
                     <div class="hover14 column">
                         <div class="agile_top_brand_left_grid">
                             <div class="agile_top_brand_left_grid_pos">
-                                <img src="images/offer.png" alt=" " class="img-responsive" />
+                                <img src="{{asset("images/offer.png")}}" alt=" " class="img-responsive" />
                             </div>
                             <div class="agile_top_brand_left_grid1">
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                            <a href="single.html"><img src="images/2.png" alt=" " class="img-responsive" /></a>
+                                            <a href="{{url("user/single")}}"><img src="{{asset("images/2.png")}}" alt=" " class="img-responsive" /></a>
                                             <p>Pepsi soft drink (2 Ltr)</p>
                                             <h4>$8.00 <span>$10.00</span></h4>
                                         </div>
@@ -332,13 +330,13 @@
                     <div class="hover14 column">
                         <div class="agile_top_brand_left_grid">
                             <div class="agile_top_brand_left_grid_pos">
-                                <img src="images/offer.png" alt=" " class="img-responsive" />
+                                <img src="{{asset("images/offer.png")}}" alt=" " class="img-responsive" />
                             </div>
                             <div class="agile_top_brand_left_grid1">
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                            <a href="single.html"><img src="images/4.png" alt=" " class="img-responsive" /></a>
+                                            <a href="{{url("user/single")}}"><img src="{{asset("images/4.png")}}" alt=" " class="img-responsive" /></a>
                                             <p>dogs food (4 Kg)</p>
                                             <h4>$9.00 <span>$11.00</span></h4>
                                         </div>
@@ -377,38 +375,38 @@
                 <div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
                     <div class="w3l_fresh_vegetables_grid2">
                         <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Juices</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Pet Food</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="bread.html">Bread & Bakery</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.html">Cleaning</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">All Brands</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/vegetables")}}">Vegetables</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/vegetables")}}">Fruits</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Juices</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Pet Food</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Bread & Bakery</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Cleaning</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Spices</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Dry Fruits</a></li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i><a href="{{url("user/products")}}">Dairy Products</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-9 w3l_fresh_vegetables_grid_right">
                     <div class="col-md-4 w3l_fresh_vegetables_grid">
                         <div class="w3l_fresh_vegetables_grid1">
-                            <img src="images/8.jpg" alt=" " class="img-responsive" />
+                            <img src="{{asset("images/8.jpg")}}" alt=" " class="img-responsive" />
                         </div>
                     </div>
                     <div class="col-md-4 w3l_fresh_vegetables_grid">
                         <div class="w3l_fresh_vegetables_grid1">
                             <div class="w3l_fresh_vegetables_grid1_rel">
-                                <img src="images/7.jpg" alt=" " class="img-responsive" />
+                                <img src="{{asset("images/7.jpg")}}" alt=" " class="img-responsive" />
                                 <div class="w3l_fresh_vegetables_grid1_rel_pos">
                                     <div class="more m1">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                        <a href="products " class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="w3l_fresh_vegetables_grid1_bottom">
-                            <img src="images/10.jpg" alt=" " class="img-responsive" />
+                            <img src="{{asset("images/10.jpg")}}" alt=" " class="img-responsive" />
                             <div class="w3l_fresh_vegetables_grid1_bottom_pos">
                                 <h5>Special Offers</h5>
                             </div>
@@ -416,10 +414,10 @@
                     </div>
                     <div class="col-md-4 w3l_fresh_vegetables_grid">
                         <div class="w3l_fresh_vegetables_grid1">
-                            <img src="images/9.jpg" alt=" " class="img-responsive" />
+                            <img src="{{asset("images/9.jpg")}}" alt=" " class="img-responsive" />
                         </div>
                         <div class="w3l_fresh_vegetables_grid1_bottom">
-                            <img src="images/11.jpg" alt=" " class="img-responsive" />
+                            <img src="{{asset("images/11.jpg")}}" alt=" " class="img-responsive" />
                         </div>
                     </div>
                     <div class="clearfix"> </div>

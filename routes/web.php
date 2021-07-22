@@ -39,30 +39,26 @@ Route::post('/products/save',[\App\Http\Controllers\ProductController::class,"sa
 Route::get('/products/remove/{id}',[\App\Http\Controllers\ProductController::class,"delete"]);
 Route::get('/products/edit/{id}',[\App\Http\Controllers\ProductController::class,"edit"]);
 Route::post('/products/update/{id}',[\App\Http\Controllers\ProductController::class,"update"]);
+Route::get('/check',[\App\Http\Controllers\ProductController::class,"checkout"]);
 
 Route::get('/user',[\App\Http\Controllers\UserController::class,"all"]);
 Route::get('/user/new',[\App\Http\Controllers\UserController::class,"form"]);
 Route::post('/user/save',[\App\Http\Controllers\UserController::class,"save"]);
 Route::get('/user/remove/{id}',[\App\Http\Controllers\UserController::class,"delete"]);
-Route::get('/user/edit/{id}',[\App\Http\Controllers\UserController::class,"edit"]);
-Route::get('/user/update/{id}',[\App\Http\Controllers\UserController::class,"update"]);
-//api danh sach san pham
-Route::get("/product-list",[WebController::class,"productList"]);
 
-// web
-
-Route::get("trang-chu",[HomeController::class,"getTrangChu"]);
-Route::get("about",[HomeController::class,"getAbout"]);
-Route::get("bread",[HomeController::class,"getBread"]);
-Route::get("checkout",[HomeController::class,"getCheckout"]);
-Route::get("events",[HomeController::class,"getEvents"]);
-Route::get("faqs",[HomeController::class,"getFaqs"]);
-Route::get("kitchen",[HomeController::class,"getKitchen"]);
-Route::get("login",[HomeController::class,"getLogin"]);
-Route::get("mail",[HomeController::class,"getMail"]);
-Route::get("payment",[HomeController::class,"getPayment"]);
-Route::get("privacy",[HomeController::class,"getPrivacy"]);
-Route::get("products",[HomeController::class,"getProducts"]);
-Route::get("services",[HomeController::class,"getServices"]);
-Route::get("single",[HomeController::class,"getSingle"]);
-Route::get("vegetables",[HomeController::class,"getVegetables"]);
+// User page
+Route::get("user/home",[HomeController::class,"getTrangChu"]);
+Route::get("user/about",[HomeController::class,"getAbout"]);
+Route::get("user/bread",[HomeController::class,"getBread"]);
+Route::get("user/checkout",[HomeController::class,"getCheckout"]);
+Route::get("user/events",[HomeController::class,"getEvents"]);
+Route::get("user/faqs",[HomeController::class,"getFaqs"]);
+Route::get("user/kitchen",[HomeController::class,"getKitchen"]);
+Route::get("user/login",[HomeController::class,"getLogin"]);
+Route::get("user/mail",[HomeController::class,"getMail"]);
+Route::get("user/payment",[HomeController::class,"getPayment"]);
+Route::get("user/privacy",[HomeController::class,"getPrivacy"]);
+Route::get("user/products",[HomeController::class,"getProducts"]);
+Route::get("user/services",[HomeController::class,"getServices"]);
+Route::get("user/single",[HomeController::class,"getSingle"]);
+Route::get("user/vegetables",[HomeController::class,"getVegetables"]);

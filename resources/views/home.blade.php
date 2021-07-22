@@ -314,38 +314,38 @@
                                     <!-- /.card-header -->
                                     <div class="card-body p-0">
                                         <ul class="users-list clearfix row">
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/gt1.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/gt2.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/gt3.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/gt4.jpg")}}" alt="User Image">
                                                 <a class="users-list-name" href="#">Gia Thịnh</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/chó tùng.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Duy Tùng</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/tung.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Duy Tùng</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/manh.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Mạnh VG</a>
                                             </li>
-                                            <li class="col-md-3">
+                                            <li class="col-md-3" style="padding: 18px">
                                                 <img src="{{asset("dist/img/manh.jpg")}}"
                                                      style="height: 81px;width: 81px" alt="User Image">
                                                 <a class="users-list-name" href="#">Mạnh VG</a>
