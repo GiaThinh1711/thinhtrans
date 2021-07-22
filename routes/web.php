@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +48,21 @@ Route::get('/user/edit/{id}',[\App\Http\Controllers\UserController::class,"edit"
 Route::get('/user/update/{id}',[\App\Http\Controllers\UserController::class,"update"]);
 //api danh sach san pham
 Route::get("/product-list",[WebController::class,"productList"]);
+
+// web
+
+Route::get("trang-chu",[HomeController::class,"getTrangChu"]);
+Route::get("about",[HomeController::class,"getAbout"]);
+Route::get("bread",[HomeController::class,"getBread"]);
+Route::get("checkout",[HomeController::class,"getCheckout"]);
+Route::get("events",[HomeController::class,"getEvents"]);
+Route::get("faqs",[HomeController::class,"getFaqs"]);
+Route::get("kitchen",[HomeController::class,"getKitchen"]);
+Route::get("login",[HomeController::class,"getLogin"]);
+Route::get("mail",[HomeController::class,"getMail"]);
+Route::get("payment",[HomeController::class,"getPayment"]);
+Route::get("privacy",[HomeController::class,"getPrivacy"]);
+Route::get("products",[HomeController::class,"getProducts"]);
+Route::get("services",[HomeController::class,"getServices"]);
+Route::get("single",[HomeController::class,"getSingle"]);
+Route::get("vegetables",[HomeController::class,"getVegetables"]);
