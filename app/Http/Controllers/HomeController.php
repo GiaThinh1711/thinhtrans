@@ -62,4 +62,8 @@ class HomeController extends Controller
         return view("Theme.vegetables");
     }
 
+    public function getServices(){
+        return view("Theme.services");
+    }
+
 }

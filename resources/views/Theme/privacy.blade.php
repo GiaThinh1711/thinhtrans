@@ -2,7 +2,7 @@
 @section("main")
 
     <!-- header -->
-    <div class="agileits_header"    >
+    <div class="agileits_header">
         <div class="w3l_offers">
             <a href="{{asset("user/products")}}">Today's special Offers !</a>
         </div>
@@ -60,12 +60,12 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="{{asset("user/index")}}"><span>Grocery</span> Store</a></h1>
+                <h1><a href=""><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
                     <li><a href="{{asset("user/events")}}">Events</a><i>/</i></li>
-                    <li><a href="{{asset("about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{asset("user/about")}}">About Us</a><i>/</i></li>
                     <li><a href="{{asset("user/products")}}">Best Deals</a><i>/</i></li>
                     <li><a href="{{asset("user/services")}}">Services</a></li>
                 </ul>
@@ -84,8 +84,8 @@
     <div class="products-breadcrumb">
         <div class="container">
             <ul>
-                <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{asset("user/index")}}">Home</a><span>|</span></li>
-                <li>About Us</li>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="">Home</a><span>|</span></li>
+                <li>Privacy Policy & Terms of Use</li>
             </ul>
         </div>
     </div>
@@ -148,32 +148,69 @@
             </nav>
         </div>
         <div class="w3l_banner_nav_right">
-            <!-- about -->
-            <div class="privacy about">
-                <h3>About Us</h3>
-                <p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                    rerum facilis est et expedita distinctio.</p>
-                <div class="agile_about_grids">
-                    <div class="col-md-6 agile_about_grid_right">
-                        <img src="{{asset("images/31.jpg")}}" alt=" " class="img-responsive" />
+            <!-- privacy -->
+            <div class="privacy">
+                <div class="privacy1">
+                    <h3>Privacy Policy</h3>
+                    <div class="banner-bottom-grid1 privacy1-grid">
+                        <ul>
+                            <li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
+                            <li>Profile <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+                        </ul>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
+                            <li>Search <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+                        </ul>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
+                            <li>News Feed <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+                        </ul>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
+                            <li>Applications <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+                        </ul>
                     </div>
-                    <div class="col-md-6 agile_about_grid_left">
-                        <ol>
-                            <li>laborum et dolorum fuga</li>
-                            <li>corrupti quos dolores et quas</li>
-                            <li>est et expedita distinctio</li>
-                            <li>deleniti atque corrupti quos</li>
-                            <li>excepturi sint occaecati cupiditate</li>
-                            <li>accusamus et iusto odio</li>
-                        </ol>
+                </div>
+                <div class="privacy1">
+                    <h3>Terms of Use</h3>
+                    <div class="banner-bottom-grid1 privacy2-grid">
+                        <div class="privacy2-grid1">
+                            <h4>deserunt mollit anim id est laborum?</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <div class="privacy2-grid1-sub">
+                                <h5>1. sint occaecat cupidatat non proident, sunt</h5>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="privacy2-grid1-sub">
+                                <h5>2.perspiciatis unde omnis iste natus error</h5>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="privacy2-grid1-sub">
+                                <h5>3. natus error sit voluptatem accusant</h5>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="privacy2-grid1-sub">
+                                <h5>4. occaecat cupidatat non proident, sunt in</h5>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="privacy2-grid1-sub">
+                                <h5>5. deserunt mollit anim id est laborum</h5>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="clearfix"> </div>
                 </div>
             </div>
-            <!-- //about -->
+            <!-- //privacy -->
         </div>
         <div class="clearfix"></div>
     </div>

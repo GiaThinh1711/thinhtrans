@@ -1,6 +1,7 @@
 @extends("Theme.layout")
 @section("main")
-    <div class="agileits_header"    >
+    <!-- header -->
+    <div class="agileits_header">
         <div class="w3l_offers">
             <a href="{{asset("user/products")}}">Today's special Offers !</a>
         </div>
@@ -58,12 +59,12 @@
     <div class="logo_products">
         <div class="container">
             <div class="w3ls_logo_products_left">
-                <h1><a href="{{asset("user/index")}}"><span>Grocery</span> Store</a></h1>
+                <h1><a href=""><span>Grocery</span> Store</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
                     <li><a href="{{asset("user/events")}}">Events</a><i>/</i></li>
-                    <li><a href="{{asset("about")}}">About Us</a><i>/</i></li>
+                    <li><a href="{{asset("user/about")}}">About Us</a><i>/</i></li>
                     <li><a href="{{asset("user/products")}}">Best Deals</a><i>/</i></li>
                     <li><a href="{{asset("user/services")}}">Services</a></li>
                 </ul>
@@ -82,8 +83,8 @@
     <div class="products-breadcrumb">
         <div class="container">
             <ul>
-                <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{asset("user/index")}}">Home</a><span>|</span></li>
-                <li>About Us</li>
+                <li><i class="fa fa-home" aria-hidden="true"></i><a href="">Home</a><span>|</span></li>
+                <li>Services</li>
             </ul>
         </div>
     </div>
@@ -134,9 +135,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
                             <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
                                 <div class="w3ls_vegetables">
-                                    <ul>
 
-                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -146,32 +145,49 @@
             </nav>
         </div>
         <div class="w3l_banner_nav_right">
-            <!-- about -->
-            <div class="privacy about">
-                <h3>About Us</h3>
-                <p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-                    officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                    rerum facilis est et expedita distinctio.</p>
-                <div class="agile_about_grids">
-                    <div class="col-md-6 agile_about_grid_right">
-                        <img src="{{asset("images/31.jpg")}}" alt=" " class="img-responsive" />
+            <!-- services -->
+            <div class="services">
+                <h3>Services</h3>
+                <div class="w3ls_service_grids">
+                    <div class="col-md-5 w3ls_service_grid_left">
+                        <h4>cum soluta nobis est</h4>
+                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                            voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+                            repellat.</p>
                     </div>
-                    <div class="col-md-6 agile_about_grid_left">
-                        <ol>
-                            <li>laborum et dolorum fuga</li>
-                            <li>corrupti quos dolores et quas</li>
-                            <li>est et expedita distinctio</li>
-                            <li>deleniti atque corrupti quos</li>
-                            <li>excepturi sint occaecati cupiditate</li>
-                            <li>accusamus et iusto odio</li>
-                        </ol>
+                    <div class="col-md-7 w3ls_service_grid_right">
+                        <div class="col-md-4 w3ls_service_grid_right_1">
+                            <img src="{{asset("images/18.jpg")}}" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-4 w3ls_service_grid_right_1">
+                            <img src="{{asset("images/19.jpg")}}" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="col-md-4 w3ls_service_grid_right_1">
+                            <img src="{{asset("images/20.jpg")}}" alt=" " class="img-responsive" />
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="w3ls_service_grids1">
+                    <div class="col-md-6 w3ls_service_grids1_left">
+                        <img src="{{asset("images/4.jpg")}}" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="col-md-6 w3ls_service_grids1_right">
+                        <ul>
+                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>et voluptates repudiandae sint et molestiae</li>
+                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>rerum necessitatibus saepe eveniet ut</li>
+                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>placeat facere possimus, omnis voluptas</li>
+                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Et harum quidem rerum facilis est et expedita</li>
+                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>similique sunt in culpa qui officia deserunt</li>
+                            <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>odio dignissimos ducimus qui blanditiis</li>
+                        </ul>
+                        <a href="{{asset("user/single")}}">Shop Now</a>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
             </div>
-            <!-- //about -->
+            <!-- //services -->
         </div>
         <div class="clearfix"></div>
     </div>
@@ -262,4 +278,5 @@
             <div class="clearfix"> </div>
         </div>
     </div>
+    <!-- //newsletter -->
 @endsection
